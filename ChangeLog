@@ -1,0 +1,15 @@
+(add new changes on top of this file)
+
+2015-02-07 Franz Holzinger  <franz@ttproducts.de>
+* new taxes for Swizzerland
+
+2013-11-09 Franz Holzinger  <franz@ttproducts.de>
+* adaptions for TYPO3 6.2
+
+2011-09-15 Franz Holzinger  <franz@ttproducts.de>
+* rename table tx_static_taxes_mm_tax_rates into static_taxes_mm_tax_rates
+
+2008-05-02 Franz Holzinger  <contact@fholzinger.com>
+
+* take all code from static_info_tables 2.0.7
+* Initial release
