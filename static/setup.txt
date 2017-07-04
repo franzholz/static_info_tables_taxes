@@ -1,4 +1,0 @@
-plugin.tx_staticinfotablestaxes_pi1 {
-
-}
-
