@@ -1,5 +1,9 @@
 (add new changes on top of this file)
 
+2017-07-04 Franz Holzinger  <franz@ttproducts.de>
+* new database structure and code API for TYPO3 6.2 and 7.6
+* add the taxes of many countries
+
 2015-02-07 Franz Holzinger  <franz@ttproducts.de>
 * new taxes for Swizzerland
 
