@@ -5,15 +5,6 @@ if (!defined ('TYPO3_MODE')) {
 
 $emClass = '\\TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility';
 
-if (
-    class_exists($emClass) &&
-    method_exists($emClass, 'extPath')
-) {
-    // nothing
-} else {
-    $emClass = 't3lib_extMgm';
-}
-
 if (!defined ('STATIC_INFO_TABLES_TAXES_EXT')) {
     define('STATIC_INFO_TABLES_TAXES_EXT', $_EXTKEY);
 }
@@ -40,3 +31,16 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables']['static_taxes'] =
         )
     );
 
+// constants for the TCA fields
+
+if (version_compare(TYPO3_version, '8.0.0', '>=')) {
+    // 'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+
+    define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.');
+} else {
+    // 'label' => 'LLL:EXT:lang/locallang_general.php:LGL.starttime',
+    define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/locallang_general.php:LGL.');
+}
+
+
+    
