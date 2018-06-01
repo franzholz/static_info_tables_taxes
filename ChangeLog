@@ -1,5 +1,8 @@
 (add new changes on top of this file)
 
+2018-06-01 Franz Holzinger  <franz@ttproducts.de>
+* bugfix in composer.json dependency from static_info_tables
+
 2018-04-18 Franz Holzinger  <franz@ttproducts.de>
 * add support for TYPO3 8.x
 
