@@ -1,6 +1,7 @@
 (add new changes on top of this file)
 
 2018-08-07 Franz Holzinger  <franz@ttproducts.de>
+* remove the file ext_autoload.php
 * bugfix PHP syntax error in static_tax_categories.php
 
 2018-06-01 Franz Holzinger  <franz@ttproducts.de>
