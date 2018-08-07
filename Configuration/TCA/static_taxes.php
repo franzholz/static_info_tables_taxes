@@ -128,7 +128,7 @@ $result = array(
             'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_uid',
             'config' => array(
                 'type' => 'inline',
-                'appearance' => array('collapseAll' => TRUE, 'newRecordLinkAddTitle' => FALSE, 'useCombination' => TRUE),
+                'appearance' => array('collapseAll' => true, 'newRecordLinkAddTitle' => false, 'useCombination' => true),
                 'foreign_table' => 'static_taxes_mm_rates',
                 'foreign_field' => 'uid_local',
                 'foreign_sortby' => 'sorting',

@@ -14,7 +14,7 @@ $result = array(
         'is_static' => 1,
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
-        'hideTable' => TRUE,
+        'hideTable' => true,
         'default_sortby' => 'ORDER BY title',
         'delete' => 'deleted',
         'enablecolumns' => array (
@@ -97,7 +97,7 @@ $result = array(
                     'parentField' => 'parentid',
                     'appearance' => array(
                         'expandAll' => 0,
-                        'showHeader' => TRUE,
+                        'showHeader' => true,
                         'maxLevels' => 99,
                     )
                 ),

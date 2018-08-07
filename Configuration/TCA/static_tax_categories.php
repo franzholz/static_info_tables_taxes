@@ -3,7 +3,7 @@ if (!defined ('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
-$where = \TYPO3\CMS\Backend\Utility\BackendUtility::BEenableFields('static_taxes_classes');
+$where = \TYPO3\CMS\Backend\Utility\BackendUtility::BEenableFields('static_tax_categories');
 
 $result = array(
     'ctrl' => array(
@@ -52,7 +52,7 @@ $result = array(
                 'default' => '0',
                 'range' => array(
                     'upper' => mktime(0, 0, 0, 12, 31, 2040),
-                    'lower' => mktime(0, 0, 0, date('m') - 1, date('d') , date('Y'))
+                    'lower' => mktime(0, 0, 0, date('m') - 1, date('d'), date('Y'))
                 )
             )
         ),
@@ -80,7 +80,7 @@ $result = array(
                     'parentField' => 'parentid',
                     'appearance' => array(
                         'expandAll' => 0,
-                        'showHeader' => TRUE,
+                        'showHeader' => true,
                         'maxLevels' => 99,
                         'width' => 450,
                     )

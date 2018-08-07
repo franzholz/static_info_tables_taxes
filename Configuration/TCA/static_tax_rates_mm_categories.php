@@ -9,14 +9,14 @@ $result = array(
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates_mm_categories',
         'label' => 'title',
         'delete' => 'deleted',
-        'enablecolumns' => Array (
+        'enablecolumns' => array (
             'disabled' => 'hidden',
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ),
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
-        'hideTable' => TRUE,
+        'hideTable' => true,
     ),
     'interface' => array(
         'showRecordFieldList' => ''
@@ -55,7 +55,6 @@ $result = array(
         )
     ),
 );
-
 
 
 return $result;

@@ -11,7 +11,7 @@ $result = array(
         'delete' => 'deleted',
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
-        'hideTable' => TRUE,
+        'hideTable' => true,
     ),
     'interface' => array(
         'showRecordFieldList' => ''
