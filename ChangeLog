@@ -1,5 +1,8 @@
 (add new changes on top of this file)
 
+2018-08-07 Franz Holzinger  <franz@ttproducts.de>
+* bugfix PHP syntax error in static_tax_categories.php
+
 2018-06-01 Franz Holzinger  <franz@ttproducts.de>
 * bugfix in composer.json dependency from static_info_tables
 
