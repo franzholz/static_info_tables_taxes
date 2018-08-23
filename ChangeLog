@@ -1,6 +1,10 @@
 (add new changes on top of this file)
 
+2018-08-23 Franz Holzinger  <franz@ttproducts.de>
+* bugfix for TYPO3 8.7: use the method \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix instead of \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath
+
 2018-08-07 Franz Holzinger  <franz@ttproducts.de>
+* TCA improvements
 * adaptions to composer.json
 * remove the file ext_autoload.php
 * bugfix PHP syntax error in static_tax_categories.php

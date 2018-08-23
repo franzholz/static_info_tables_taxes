@@ -6,7 +6,7 @@ if (!defined ('TYPO3_MODE')) {
 $emClass = '\\TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility';
 
 if (!defined ('STATIC_INFO_TABLES_TAXES_EXT')) {
-    define('STATIC_INFO_TABLES_TAXES_EXT', $_EXTKEY);
+    define('STATIC_INFO_TABLES_TAXES_EXT', 'static_info_tables_taxes');
 }
 
 if (!defined ('STATIC_INFO_TABLES_EXT')) {
@@ -14,11 +14,11 @@ if (!defined ('STATIC_INFO_TABLES_EXT')) {
 }
 
 if (!defined ('PATH_BE_STATICINFOTABLESTAXES')) {
-    define('PATH_BE_STATICINFOTABLESTAXES', call_user_func($emClass . '::extPath', $_EXTKEY));
+    define('PATH_BE_STATICINFOTABLESTAXES', call_user_func($emClass . '::extPath', STATIC_INFO_TABLES_TAXES_EXT));
 }
 
 if (!defined ('PATH_BE_STATICINFOTABLESTAXES_REL')) {
-    define('PATH_BE_STATICINFOTABLESTAXES_REL', call_user_func($emClass . '::extRelPath', $_EXTKEY));
+    define('PATH_BE_STATICINFOTABLESTAXES_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_STATICINFOTABLESTAXES));
 }
 
 // constants for the TCA fields
@@ -33,7 +33,7 @@ if (version_compare(TYPO3_version, '8.0.0', '>=')) {
 }
 
 
-$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables']['static_taxes'] =
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][STATIC_INFO_TABLES_TAXES_EXT]['tables']['static_taxes'] =
     array (
         'label_fields' => array(
             'tx_name_##', 'tx_name_en'
