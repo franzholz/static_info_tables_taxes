@@ -1,42 +1,38 @@
 {
-  "name": "jambagecom/static-info-tables-taxes",
-  "type": "typo3-cms-extension",
-  "description": "Tables and functions used for dealing with taxes. TYPO3 extension.",
-  "license": "GPL-2.0+",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.typo3.org"
+    "name": "jambagecom/static-info-tables-taxes",
+    "type": "typo3-cms-extension",
+    "description": "Tables and functions used for dealing with taxes. TYPO3 extension.",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "keywords": [
+        "TYPO3 CMS",
+        "Static Info Tables",
+        "tax"
+    ],
+    "support": {
+        "issues": "https://github.com/franzholz/static_info_tables_taxes/issues"
+    },
+    "homepage": "https://jambage.com",
+    "authors": [
+        {
+        "name": "Franz Holzinger",
+        "role": "Developer",
+        "homepage": "https://ttproducts.de"
+        }
+    ],
+    "require": {
+       "php": "^5.5",
+        "typo3/cms-core": ">=6.2.0,<=9.5.99",
+        "typo3-ter/static-info-tables": "^6.5"
+    },
+    "replace": {
+        "jambagecom/static-info-tables-taxes": "self.version",
+        "typo3-ter/static-info-tables-taxes": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "static_info_tables_taxes"
+        }
     }
-  ],
-  "keywords": [
-    "TYPO3 CMS",
-    "Static Info Tables",
-    "tax"
-  ],
-  "support": {
-    "issues": "https://github.com/franzholz/static_info_tables_taxes/issues"
-  },
-  "homepage": "https://jambage.com",
-  "authors": [
-    {
-      "name": "Franz Holzinger",
-      "role": "Developer",
-      "homepage": "https://ttproducts.de"
-    }
-  ],
-  "replace": {
-    "static_info_tables_taxes": "self.version",
-    "typo3-ter/static-info-tables-taxes": "self.version"
-  },
-  "require": {
-    "php": ">=5.3.3",
-    "typo3/cms-core": ">=6.2,<8.99.99",
-    "typo3-ter/static-info-tables": "^6.5"
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "static_info_tables_taxes"
-    }
-  }
 }

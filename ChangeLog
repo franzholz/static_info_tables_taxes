@@ -1,4 +1,7 @@
-(add new changes on top of this file)
+
+2019-12-21 Franz Holzinger <franz@ttproducts.de>
+ * compatibility for TYPO3 9: static_info_tables_taxes 0.4.0 now runs fully under TYPO3 9.5.
+ * Add new reduced tax rates for ebooks in Germany 7% since 18th December 2019 and Austria 10% since 1st January 2020.    
 
 2018-08-23 Franz Holzinger  <franz@ttproducts.de>
 * bugfix for TYPO3 8.7: use the method \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix instead of \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath

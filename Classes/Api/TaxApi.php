@@ -28,7 +28,9 @@ namespace JambageCom\StaticInfoTablesTaxes\Api;
 * static info tables for taxes
 * for the EU: see document
 * http://ec.europa.eu/taxation_customs/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_de.pdf
-*
+* https://ec.europa.eu/taxation_customs/sites/taxation/files/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf
+* https://ec.europa.eu/taxation_customs/sites/taxation/files/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_de.pdf
+
 * @author  Franz Holzinger <franz@ttproducts.de>
 * @package TYPO3
 */
@@ -158,7 +160,7 @@ class TaxApi {
         array &$taxArray,
         $amount,
         $decimalDigits = 0,
-        $staticInfoObj = NULL
+        $staticInfoObj = null
     ) {
         $taxArrayAmount = false;
 
@@ -211,6 +213,9 @@ class TaxApi {
         $select_fields = 'uid,parentid';
         $from_table = 'static_tax_categories';
         $whereClause = 'uid IN (' . implode(',', $categoryArray) . ')';
+        $enableClause =
+            $GLOBALS['TSFE']->sys_page->enableFields($from_table);
+        $whereClause .= $enableClause;
 
         $rowArray = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
             $select_fields,

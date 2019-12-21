@@ -425,6 +425,8 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('2', '2');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
 	VALUES ('2', '301');
+INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign, starttime)
+	VALUES ('2', '305', 1577836800);
 
 
 # BELGIUM
@@ -655,7 +657,8 @@ INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
 	VALUES ('29', '0', '0', '0', 'DEU-2', '7');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('29', '29');
-
+INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign, starttime)
+	VALUES ('29', '305', 1576627200);
 
 # DENMARK
 

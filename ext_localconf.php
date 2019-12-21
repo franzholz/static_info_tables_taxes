@@ -1,45 +1,45 @@
 <?php
-if (!defined ('TYPO3_MODE')) {
-    die ('Access denied.');
-}
+defined('TYPO3_MODE') || die('Access denied.');
 
-$emClass = '\\TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility';
+call_user_func(function () {
 
-if (!defined ('STATIC_INFO_TABLES_TAXES_EXT')) {
-    define('STATIC_INFO_TABLES_TAXES_EXT', 'static_info_tables_taxes');
-}
+    if (!defined ('STATIC_INFO_TABLES_TAXES_EXT')) {
+        define('STATIC_INFO_TABLES_TAXES_EXT', 'static_info_tables_taxes');
+    }
 
-if (!defined ('STATIC_INFO_TABLES_EXT')) {
-    define('STATIC_INFO_TABLES_EXT', 'static_info_tables');
-}
+    if (!defined ('STATIC_INFO_TABLES_EXT')) {
+        define('STATIC_INFO_TABLES_EXT', 'static_info_tables');
+    }
 
-if (!defined ('PATH_BE_STATICINFOTABLESTAXES')) {
-    define('PATH_BE_STATICINFOTABLESTAXES', call_user_func($emClass . '::extPath', STATIC_INFO_TABLES_TAXES_EXT));
-}
+    if (!defined ('PATH_BE_STATICINFOTABLESTAXES')) {
+        define('PATH_BE_STATICINFOTABLESTAXES', \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath(STATIC_INFO_TABLES_TAXES_EXT));
+    }
 
-if (!defined ('PATH_BE_STATICINFOTABLESTAXES_REL')) {
-    define('PATH_BE_STATICINFOTABLESTAXES_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_STATICINFOTABLESTAXES));
-}
+    if (!defined ('PATH_BE_STATICINFOTABLESTAXES_REL')) {
+        define('PATH_BE_STATICINFOTABLESTAXES_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_STATICINFOTABLESTAXES));
+    }
 
-// constants for the TCA fields
+    // constants for the TCA fields
 
-if (version_compare(TYPO3_version, '8.0.0', '>=')) {
-    // for a TCA 'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+    if (version_compare(TYPO3_version, '8.0.0', '>=')) {
+        // for a TCA 'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
 
-    define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.');
-} else {
-    // for a TCA 'label' => 'LLL:EXT:lang/locallang_general.php:LGL.starttime',
-    define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/locallang_general.php:LGL.');
-}
+        define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.');
+    } else {
+        // for a TCA 'label' => 'LLL:EXT:lang/locallang_general.php:LGL.starttime',
+        define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/locallang_general.php:LGL.');
+    }
 
 
-$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][STATIC_INFO_TABLES_TAXES_EXT]['tables']['static_taxes'] =
-    array (
-        'label_fields' => array(
-            'tx_name_##', 'tx_name_en'
-        ),
-        'isocode_field' => array(
-            'tx_code', 'tx_country_iso_##', 'tx_zn_code'
-        )
-    );
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][STATIC_INFO_TABLES_TAXES_EXT]['tables']['static_taxes'] =
+        array (
+            'label_fields' => array(
+                'tx_name_##', 'tx_name_en'
+            ),
+            'isocode_field' => array(
+                'tx_code', 'tx_country_iso_##', 'tx_zn_code'
+            )
+        );
+});
+
 
