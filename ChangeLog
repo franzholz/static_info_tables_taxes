@@ -1,3 +1,6 @@
+2020-02-28 Franz Holzinger <franz@ttproducts.de>
+ * new feature for method fetchCountryTaxes: $countryCode and $zoneCode must be filled in before every return.
+ * use the static keyword instead of self
 
 2019-12-21 Franz Holzinger <franz@ttproducts.de>
  * compatibility for TYPO3 9: static_info_tables_taxes 0.4.0 now runs fully under TYPO3 9.5.

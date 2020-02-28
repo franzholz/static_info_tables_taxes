@@ -5,7 +5,7 @@ namespace JambageCom\StaticInfoTablesTaxes\Api;
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2018 Franz Holzinger (franz@ttproducts.de)
+*  (c) 2020 Franz Holzinger (franz@ttproducts.de)
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -55,45 +55,45 @@ class TaxApi {
         $taxRateArray = array(),
         $taxTitleArray = array()
     ) {
-        self::$countryCodeArray = array();
-        self::$subdivisionCodeArray = array();
-        self::$initTaxInfoArray = array();
+        static::$countryCodeArray = array();
+        static::$subdivisionCodeArray = array();
+        static::$initTaxInfoArray = array();
         $countryCode = '';
         $zoneCode = '';
 
         if ($shopCountryCode != '') {
-            self::$countryCodeArray['shop'] = $shopCountryCode;
+            static::$countryCodeArray['shop'] = $shopCountryCode;
         }
 
         if ($shopSubdivisionCode != '') {
-            self::$subdivisionCodeArray['shop'] = $shopSubdivisionCode;
+            static::$subdivisionCodeArray['shop'] = $shopSubdivisionCode;
         }
 
         if ($shippingCountryCode != '') {
-            self::$countryCodeArray['shipping'] = $shippingCountryCode;
+            static::$countryCodeArray['shipping'] = $shippingCountryCode;
         }
 
         if ($shippingSubdivisionCode != '') {
-            self::$subdivisionCodeArray['shipping'] = $shippingSubdivisionCode;
+            static::$subdivisionCodeArray['shipping'] = $shippingSubdivisionCode;
         }
 
         if ($billingCountryCode != '') {
-            self::$countryCodeArray['billing'] = $billingCountryCode;
+            static::$countryCodeArray['billing'] = $billingCountryCode;
         }
 
         if ($billingSubdivisionCode != '') {
-            self::$subdivisionCodeArray['billing'] = $billingSubdivisionCode;
+            static::$subdivisionCodeArray['billing'] = $billingSubdivisionCode;
         }
 
-        if (self::$countryCodeArray['shipping'] != '') {
-            $countryCode = self::$countryCodeArray['shipping'];
-            if (self::$subdivisionCodeArray['shipping'] != '') {
-                $zoneCode = self::$subdivisionCodeArray['shipping'];
+        if (static::$countryCodeArray['shipping'] != '') {
+            $countryCode = static::$countryCodeArray['shipping'];
+            if (static::$subdivisionCodeArray['shipping'] != '') {
+                $zoneCode = static::$subdivisionCodeArray['shipping'];
             }
-        } else if (self::$countryCodeArray['billing'] != '') {
-            $countryCode = self::$countryCodeArray['billing'];
-            if (self::$subdivisionCodeArray['billing'] != '') {
-                $zoneCode = self::$subdivisionCodeArray['billing'];
+        } else if (static::$countryCodeArray['billing'] != '') {
+            $countryCode = static::$countryCodeArray['billing'];
+            if (static::$subdivisionCodeArray['billing'] != '') {
+                $zoneCode = static::$subdivisionCodeArray['billing'];
             }
         }
 
@@ -134,7 +134,7 @@ class TaxApi {
                         ) {
                             $row['title'] = $taxTitleArray[$key];
                         }
-                        self::$initTaxInfoArray[$countryCode][] = $row;
+                        static::$initTaxInfoArray[$countryCode][] = $row;
                         break;
                     }
                 }
@@ -231,7 +231,7 @@ class TaxApi {
                 $result[] = $row['uid'];
                 if (!empty($row['parentid']) && $recursionLevel < 10) {
                     $parentArray =
-                        self::getCategoryRootline(
+                        static::getCategoryRootline(
                             array($row['parentid']),
                             $recursionLevel + 1
                         );
@@ -266,7 +266,7 @@ class TaxApi {
     * @param	string		The country subdivision code of the region of the customer shipping address
     * @param	string		The ISO alpha-3 code of the country of the customer's billing address
     * @param	boolean		Should be set if the shop has sales of goods beyond the regulatory threshold in the buyer's country (when both shop and buyer in EU)
-    * @return	array		An array of 4-plets of applied taxes: ('tx_name_en', 'tx_rate', 'tx_priority')
+    * @return	array		An array of country code of an array of 4-plets of applied taxes: ['cn_iso_3	', 'country_code', 'country_zone', 'tx_rate', 'title']
     */
     static public function fetchCountryTaxes (
         &$countryCode,
@@ -291,52 +291,45 @@ class TaxApi {
         $tax = str_replace(',', '.', $tax);
 
         if (
-            $useInitTaxInfoArray &&
-            !empty(self::$initTaxInfoArray)
-        ) {
-            return self::$initTaxInfoArray;
-        }
-
-        if (
             empty($shopCountryCode) &&
-            !empty(self::$countryCodeArray['shop'])
+            !empty(static::$countryCodeArray['shop'])
         ) {
-            $shopCountryCode = self::$countryCodeArray['shop'];
+            $shopCountryCode = static::$countryCodeArray['shop'];
         }
 
         if (
             empty($shopSubdivisionCode) &&
-            !empty(self::$subdivisionCodeArray['shop'])
+            !empty(static::$subdivisionCodeArray['shop'])
         ) {
-            $shopSubdivisionCode = self::$subdivisionCodeArray['shop'];
+            $shopSubdivisionCode = static::$subdivisionCodeArray['shop'];
         }
 
         if (
             empty($shippingCountryCode) &&
-            !empty(self::$countryCodeArray['shipping'])
+            !empty(static::$countryCodeArray['shipping'])
         ) {
-            $shippingCountryCode = self::$countryCodeArray['shipping'];
+            $shippingCountryCode = static::$countryCodeArray['shipping'];
         }
 
         if (
             empty($shippingSubdivisionCode) &&
-            !empty(self::$subdivisionCodeArray['shipping'])
+            !empty(static::$subdivisionCodeArray['shipping'])
         ) {
-            $shippingSubdivisionCode = self::$subdivisionCodeArray['shipping'];
+            $shippingSubdivisionCode = static::$subdivisionCodeArray['shipping'];
         }
 
         if (
             empty($billingCountryCode) &&
-            !empty(self::$countryCodeArray['billing'])
+            !empty(static::$countryCodeArray['billing'])
         ) {
-            $billingCountryCode = self::$countryCodeArray['billing'];
+            $billingCountryCode = static::$countryCodeArray['billing'];
         }
 
         if (
             empty($billingSubdivisionCode) &&
-            !empty(self::$subdivisionCodeArray['billing'])
+            !empty(static::$subdivisionCodeArray['billing'])
         ) {
-            $billingSubdivisionCode = self::$subdivisionCodeArray['billing'];
+            $billingSubdivisionCode = static::$subdivisionCodeArray['billing'];
         }
 
         $shopCountryCode = (!empty($shopCountryCode) ? trim($shopCountryCode) : $staticInfoObj->defaultCountry);
@@ -344,6 +337,9 @@ class TaxApi {
         $shippingCountryCode = (!empty($shippingCountryCode) ? trim($shippingCountryCode) : $billingCountryCode);
         $shopSubdivisionCode = trim($shopSubdivisionCode);
         $shippingSubdivisionCode = trim($shippingSubdivisionCode);
+
+        $countryCode = $shippingCountryCode;
+        $zoneCode = $shippingSubdivisionCode;
 
         if (
             !is_object($staticInfoObj) ||
@@ -362,6 +358,13 @@ class TaxApi {
             empty($shopCountryCode)
         ) {
             return $taxArray;
+        }
+
+        if (
+            $useInitTaxInfoArray &&
+            !empty(static::$initTaxInfoArray)
+        ) {            
+            return static::$initTaxInfoArray;
         }
 
         if (
@@ -457,7 +460,7 @@ class TaxApi {
                 empty($tax) &&
                 !empty($categoryArray)
             ) {
-                $categoryLines = self::getCategoryRootline($categoryArray);
+                $categoryLines = static::getCategoryRootline($categoryArray);
             }
 
             if (
@@ -465,7 +468,7 @@ class TaxApi {
                 (
                     $EUThreshold ||
                     in_array(
-                        self::EU_CATEGORY_DIGITAL_MEDIA,
+                        static::EU_CATEGORY_DIGITAL_MEDIA,
                         $categoryLines
                     ) // check for a Digital Service category of the EU rules where the customer's country tax must be used
                 )
@@ -555,7 +558,6 @@ class TaxApi {
                 $taxRow = array();
 
                 while($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
-
                     $whereClause = ' AND ' . $mm_table . '.uid_local=' . $row['uid'] . $enableClause . ' AND ' . $mm_table .'.uid_foreign IN (' . implode(',',  $categoryLines) . ')';
 
                     $categoryRes = $GLOBALS['TYPO3_DB']->exec_SELECT_mm_query(
