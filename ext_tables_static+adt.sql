@@ -409,7 +409,7 @@ INSERT INTO static_tax_categories (uid, title, parentid)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('1', '0', '0', '0', 'AT', 'AUT', '', 'Austria VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('1', '0', '0', '0', 'AUT', '20');
+	VALUES ('1', '0', '0', '0', 'AUT-1', '20');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('1', '1');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
@@ -420,127 +420,134 @@ INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('2', '0', '0', '0', 'AT', 'AUT', '', 'Austria Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('2', '0', '0', '0', 'AUT', '10');
+	VALUES ('2', '0', '0', '0', 'AUT-2', '13');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('2', '2');
+
+INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
+	VALUES ('3', '0', '0', '0', 'AT', 'AUT', '', 'Austria Lowest VAT', '3', '3', '1', '1');
+INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
+	VALUES ('3', '0', '0', '0', 'AUT-3', '10');
+INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
+	VALUES ('3', '3');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
-	VALUES ('2', '301');
+	VALUES ('3', '301');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign, starttime)
-	VALUES ('2', '305', 1577836800);
+	VALUES ('3', '305', 1577836800);
 
-
+	
 # BELGIUM
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('3', '0', '0', '0', 'BE', 'BEL', '', 'Belgium VAT', '1', '1', '1', '1');
+	VALUES ('4', '0', '0', '0', 'BE', 'BEL', '', 'Belgium VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('3', '0', '0', '0', 'BEL', '21');
-INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
-	VALUES ('3', '3');
-INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
-	VALUES ('3', '1');
-
-INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('4', '0', '0', '0', 'BE', 'BEL', '', 'Belgium Reduced VAT', '2', '2', '1', '1');
-INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('4', '0', '0', '0', 'BEL', '12');
+	VALUES ('4', '0', '0', '0', 'BEL-1', '21');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('4', '4');
+INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
+	VALUES ('4', '1');
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('5', '0', '0', '0', 'BE', 'BEL', '', 'Belgium Lowest VAT', '3', '3', '1', '1');
+	VALUES ('5', '0', '0', '0', 'BE', 'BEL', '', 'Belgium Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('5', '0', '0', '0', 'BEL', '6');
+	VALUES ('5', '0', '0', '0', 'BEL-2', '12');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('5', '5');
+
+INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
+	VALUES ('6', '0', '0', '0', 'BE', 'BEL', '', 'Belgium Lowest VAT', '3', '3', '1', '1');
+INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
+	VALUES ('6', '0', '0', '0', 'BEL-3', '6');
+INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
+	VALUES ('6', '6');
 
 
 # BULGARIA
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('6', '0', '0', '0', 'BG', 'BGR', '', 'Bulgaria VAT', '1', '1', '1', '1');
+	VALUES ('7', '0', '0', '0', 'BG', 'BGR', '', 'Bulgaria VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('6', '0', '0', '0', 'BGR', '20');
+	VALUES ('7', '0', '0', '0', 'BGR-1', '20');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
-	VALUES ('6', '6');
+	VALUES ('7', '6');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
-	VALUES ('6', '1');
+	VALUES ('7', '1');
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('7', '0', '0', '0', 'BG', 'BGR', '', 'Bulgaria Reduced VAT', '2', '2', '1', '1');
+	VALUES ('8', '0', '0', '0', 'BG', 'BGR', '', 'Bulgaria Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('7', '0', '0', '0', 'BGR', '9');
+	VALUES ('8', '0', '0', '0', 'BGR-2', '9');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
-	VALUES ('7', '7');
+	VALUES ('8', '8');
 
 
 # CANADA
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('8', '0', '0', '0', 'CA', 'CAN', 'SK', 'Saskatchewan Retail Sales Tax', 'SKRST', '1', '1', '1');
+	VALUES ('9', '0', '0', '0', 'CA', 'CAN', 'SK', 'Saskatchewan Retail Sales Tax', 'SKRST', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('8', '0', '0', '0', 'CAN-SKRST', '6');
-INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
-	VALUES ('8', '8');
-
-
-INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('9', '0', '0', '0', 'CA', 'CAN', 'QC', 'Québec Sales Tax', 'TVQ', '1', '1', '2');
-INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('9', '0', '0', '0', 'CAN-TVQ', '7.5');
+	VALUES ('9', '0', '0', '0', 'CAN-SKRST', '6');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('9', '9');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('10', '0', '0', '0', 'CA', 'CAN', '', 'Canada Goods and Services Tax', 'GST', '1', '1', '1');
+	VALUES ('10', '0', '0', '0', 'CA', 'CAN', 'QC', 'Québec Sales Tax', 'TVQ', '1', '1', '2');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('10', '0', '0', '0', 'CAN-GST', '5');
+	VALUES ('10', '0', '0', '0', 'CAN-TVQ', '7.5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('10', '10');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('11', '0', '0', '0', 'CA', 'CAN', 'MB', 'Manitoba Retail Sales Tax', 'MBRST', '1', '1', '2');
+	VALUES ('11', '0', '0', '0', 'CA', 'CAN', '', 'Canada Goods and Services Tax', 'GST', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('11', '0', '0', '0', 'CAN-MBRST', '5');
+	VALUES ('11', '0', '0', '0', 'CAN-GST', '5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('11', '11');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('12', '0', '0', '0', 'CA', 'CAN', 'BC', 'British Columbia Retail Sales Tax', 'BCRST', '1', '1', '1');
+	VALUES ('12', '0', '0', '0', 'CA', 'CAN', 'MB', 'Manitoba Retail Sales Tax', 'MBRST', '1', '1', '2');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('12', '0', '0', '0', 'CAN-BCRST', '7.5');
+	VALUES ('12', '0', '0', '0', 'CAN-MBRST', '5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('12', '12');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('13', '0', '0', '0', 'CA', 'CAN', 'ON', 'Ontario Retail Sales Tax', 'ONRST', '1', '1', '1');
+	VALUES ('13', '0', '0', '0', 'CA', 'CAN', 'BC', 'British Columbia Retail Sales Tax', 'BCRST', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('13', '0', '0', '0', 'CAN-ONRST', '8');
+	VALUES ('13', '0', '0', '0', 'CAN-BCRST', '7.5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('13', '13');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('14', '0', '0', '0', 'CA', 'CAN', 'NB', 'New Brunswick Harmonized Sales Tax', 'HST', '1', '1', '1');
+	VALUES ('14', '0', '0', '0', 'CA', 'CAN', 'ON', 'Ontario Retail Sales Tax', 'ONRST', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('14', '0', '0', '0', 'CAN-HST New Brunswick', '8');
+	VALUES ('14', '0', '0', '0', 'CAN-ONRST', '8');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('14', '14');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
-	VALUES ('15', '0', '0', '0', 'CA', 'CAN', 'NS', 'Nova Scotia Harmonized Sales Tax', 'HST', '1', '1', '1');
+	VALUES ('15', '0', '0', '0', 'CA', 'CAN', 'NB', 'New Brunswick Harmonized Sales Tax', 'HST', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('15', '0', '0', '0', 'CAN-HST Nova Scotia', '8');
+	VALUES ('15', '0', '0', '0', 'CAN-HST New Brunswick', '8');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('15', '15');
+
+
+INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
+	VALUES ('16', '0', '0', '0', 'CA', 'CAN', 'NS', 'Nova Scotia Harmonized Sales Tax', 'HST', '1', '1', '1');
+INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
+	VALUES ('16', '0', '0', '0', 'CAN-HST Nova Scotia', '8');
+INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
+	VALUES ('16', '16');
 
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
@@ -635,7 +642,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('27', '0', '0', '0', 'CZ', 'CZE', '', 'Czech Republic Lower Reduced VAT', '3', '3', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('27', '0', '0', '0', 'CZE-3', '5');
+	VALUES ('27', '0', '0', '0', 'CZE-3', '10');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('27', '27');
 
@@ -645,7 +652,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('28', '0', '0', '0', 'DE', 'DEU', '', 'Germany VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('28', '0', '0', '0', 'DEU-1', '19');
+	VALUES ('28', '0', '0', '0', 'DEU-1', '16');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('28', '28');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
@@ -654,7 +661,7 @@ INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('29', '0', '0', '0', 'DE', 'DEU', '', 'Germany Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('29', '0', '0', '0', 'DEU-2', '7');
+	VALUES ('29', '0', '0', '0', 'DEU-2', '5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('29', '29');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign, starttime)
@@ -817,7 +824,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('72', '0', '0', '0', 'GR', 'GRC', '', 'Greece VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('72', '0', '0', '0', 'GRC-1', '23');
+	VALUES ('72', '0', '0', '0', 'GRC-1', '24');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('72', '72');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
@@ -833,7 +840,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('74', '0', '0', '0', 'GR', 'GRC', '', 'Greece Lower Reduced VAT', '3', '3', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('74', '0', '0', '0', 'GRC-3', '6,5');
+	VALUES ('74', '0', '0', '0', 'GRC-3', '6');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('74', '74');
 
@@ -871,7 +878,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('80', '0', '0', '0', 'HU', 'HUN', '', 'Hungary VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('80', '0', '0', '0', 'HUN-1', '20');
+	VALUES ('80', '0', '0', '0', 'HUN-1', '27');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('80', '80');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
@@ -898,7 +905,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('83', '0', '0', '0', 'IE', 'IRL', '', 'Ireland VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('83', '0', '0', '0', 'IRL-1', '21');
+	VALUES ('83', '0', '0', '0', 'IRL-1', '23');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('83', '83');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
