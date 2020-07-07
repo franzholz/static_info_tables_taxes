@@ -420,14 +420,14 @@ INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('2', '0', '0', '0', 'AT', 'AUT', '', 'Austria Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('2', '0', '0', '0', 'AUT-2', '13');
+	VALUES ('2', '0', '0', '0', 'AUT-2', '5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('2', '2');
 
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('3', '0', '0', '0', 'AT', 'AUT', '', 'Austria Lowest VAT', '3', '3', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('3', '0', '0', '0', 'AUT-3', '10');
+	VALUES ('3', '0', '0', '0', 'AUT-3', '5');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('3', '3');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
