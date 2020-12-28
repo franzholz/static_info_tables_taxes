@@ -652,7 +652,7 @@ INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('28', '0', '0', '0', 'DE', 'DEU', '', 'Germany VAT', '1', '1', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('28', '0', '0', '0', 'DEU-1', '16');
+	VALUES ('28', '0', '0', '0', 'DEU-1', '19');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('28', '28');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
@@ -661,7 +661,7 @@ INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign)
 INSERT INTO static_taxes (uid, pid, starttime, endtime, tx_country_iso_2, tx_country_iso_3, tx_zn_code, tx_name_en, tx_code, tx_rate_id, tx_rate_uid, tx_priority)
 	VALUES ('29', '0', '0', '0', 'DE', 'DEU', '', 'Germany Reduced VAT', '2', '2', '1', '1');
 INSERT INTO static_tax_rates (uid, pid, starttime, endtime, title, tx_rate)
-	VALUES ('29', '0', '0', '0', 'DEU-2', '5');
+	VALUES ('29', '0', '0', '0', 'DEU-2', '7');
 INSERT INTO static_taxes_mm_rates (uid_local, uid_foreign)
 	VALUES ('29', '29');
 INSERT INTO static_tax_rates_mm_categories (uid_local, uid_foreign, starttime)
