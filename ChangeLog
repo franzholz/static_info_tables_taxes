@@ -1,3 +1,6 @@
+2021-02-13 Franz Holzinger <franz@ttproducts.de>
+ * support for TYPO3 10.4 and PHP 7.4
+ * support the parameter object \JambageCom\Div2007\Api\StaticInfoTablesApi as well as \SJBR\StaticInfoTables\PiBaseApi 
 
 2020-12-28 Franz Holzinger <franz@ttproducts.de>
  * apaptions for Germany Corona reduced taxes: Undo the tax reductions. The new values are 19 and 7 percent again.

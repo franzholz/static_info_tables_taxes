@@ -252,7 +252,7 @@ class TaxApi {
     *
     * @param	string		return: The ISO alpha-3 code of the country for which the tax is calculated
     * @param	string		return: The country subdivision code of the region for which the tax is calculated
-    * @param	object		object of the class tx_staticinfotables_pi1
+    * @param	object		object of a static_info_tables class
     * @param	float		The tax rate to be used. Set it to zero (0.0) if the following parameters shall be used to determine the tax.
     * @param	array		array of the taxation categories of the product
     * @param	integer		The tax id of the tax rate to be used.
@@ -271,7 +271,7 @@ class TaxApi {
     static public function fetchCountryTaxes (
         &$countryCode,
         &$zoneCode,
-        \SJBR\StaticInfoTables\PiBaseApi $staticInfoObj,
+        $staticInfoObj,
         $tax = 0.0,
         array $categoryArray = array(),
         $taxId = 1,
@@ -284,6 +284,22 @@ class TaxApi {
         $EUThreshold = 0,
         $useInitTaxInfoArray = true
     ) {
+        if (
+            !is_object($staticInfoObj) ||
+            (
+                !($staticInfoObj instanceof \JambageCom\Div2007\Api\StaticInfoTablesApi) &&
+                !($staticInfoObj instanceof \SJBR\StaticInfoTables\PiBaseApi)
+            )
+        ) {
+            $errorDetail = '';
+            if (is_object($tax)) {
+                $errorDetail = ' "' . get_class($staticInfoObj) . '" is no supported object.'
+            } else {
+                $errorDetail = ' "' . $staticInfoObj . '" is no object';
+            }
+            throw new \RuntimeException ('Parameter 3 of fetchCountryTaxes' . $errorDetail);
+        }
+
         if (!is_numeric($tax)) {
             throw new \RuntimeException ('Parameter 4 of fetchCountryTaxes "' . $tax . '" is no float value in TAX API');
         }
