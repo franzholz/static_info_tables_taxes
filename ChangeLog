@@ -1,3 +1,6 @@
+2021-05-18 Franz Holzinger <franz@ttproducts.de>
+ * bugfix issue #3: wrong PHP version constraint in composer.json
+
 2021-02-13 Franz Holzinger <franz@ttproducts.de>
  * support for TYPO3 10.4 and PHP 7.4
  * support the parameter object \JambageCom\Div2007\Api\StaticInfoTablesApi as well as \SJBR\StaticInfoTables\PiBaseApi 
