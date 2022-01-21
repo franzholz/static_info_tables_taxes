@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file t3:id="1642768497" source-language="en" datatype="plaintext" original="messages" date="2022-01-21T12:34:57Z" product-name="static_info_tables_taxes">
+		<header/>
+		<body>
+			<trans-unit id="static_taxes" resname="static_taxes" >
+				<source>Static taxes</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.cn_iso_2" resname="static_taxes.cn_iso_2" >
+				<source>ISO 3166-1 A2 Country code:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.cn_iso_3" resname="static_taxes.cn_iso_3" >
+				<source>ISO 3166-1 A3 Country code:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.zn_code" resname="static_taxes.zn_code" >
+				<source>ISO 3166-2 Country Zone code:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_name_en" resname="static_taxes.tx_name_en" >
+				<source>Tax name (EN):</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_code" resname="static_taxes.tx_code" >
+				<source>Tax code:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id" resname="static_taxes.tx_rate_id" >
+				<source>Tax rate:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.0" resname="static_taxes.tx_rate_id.I.0" >
+				<source>Unused</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.1" resname="static_taxes.tx_rate_id.I.1" >
+				<source>Standard</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.2" resname="static_taxes.tx_rate_id.I.2" >
+				<source>Upper Reducted</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.3" resname="static_taxes.tx_rate_id.I.3" >
+				<source>Intermediate Reducted</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.4" resname="static_taxes.tx_rate_id.I.4" >
+				<source>Lower Reducted</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_id.I.5" resname="static_taxes.tx_rate_id.I.5" >
+				<source>Lowest Reducted</source>
+			</trans-unit>
+			<trans-unit id="static_tax_categories" resname="static_tax_categories" >
+				<source>Tax Categories</source>
+			</trans-unit>
+			<trans-unit id="static_tax_rates.category" resname="static_tax_rates.category" >
+				<source>Category:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_rate_uid" resname="static_taxes.tx_rate_uid" >
+				<source>Tax table:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes.tx_priority" resname="static_taxes.tx_priority" >
+				<source>Priority:</source>
+			</trans-unit>
+			<trans-unit id="static_taxes_mm_rates" resname="static_taxes_mm_rates" >
+				<source>Static taxes to tax rates</source>
+			</trans-unit>
+			<trans-unit id="static_tax_rates_mm_classes" resname="static_tax_rates_mm_classes" >
+				<source>Static tax rates to classes</source>
+			</trans-unit>
+			<trans-unit id="static_tax_rates" resname="static_tax_rates" >
+				<source>Static tax rates</source>
+			</trans-unit>
+			<trans-unit id="static_tax_rates.tx_rate" resname="static_tax_rates.tx_rate" >
+				<source>Rate:</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
