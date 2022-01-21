@@ -21,15 +21,11 @@ call_user_func(function () {
 
     // constants for the TCA fields
 
-    if (version_compare(TYPO3_version, '8.0.0', '>=')) {
-        // for a TCA 'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+    // for a TCA 'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
 
+    if (!defined('STATICINFOTABLESTAXES_LANGUAGE_LGL')) {
         define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.');
-    } else {
-        // for a TCA 'label' => 'LLL:EXT:lang/locallang_general.php:LGL.starttime',
-        define('STATICINFOTABLESTAXES_LANGUAGE_LGL', 'LLL:EXT:lang/locallang_general.php:LGL.');
     }
-
 
     $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][STATIC_INFO_TABLES_TAXES_EXT]['tables']['static_taxes'] =
         array (

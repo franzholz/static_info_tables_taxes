@@ -39,9 +39,9 @@ namespace JambageCom\StaticInfoTablesTaxes\Api;
 class TaxApi {
     const EU_CATEGORY_DIGITAL_MEDIA = 304;
     const EU_CATEGORY_DIGITAL_MEDIA_EBOOK = 305;
-    static public $initTaxInfoArray = array();
-    static protected $countryCodeArray = array();
-    static protected $subdivisionCodeArray = array();
+    static public $initTaxInfoArray = [];
+    static protected $countryCodeArray = [];
+    static protected $subdivisionCodeArray = [];
 
 
     static public function init (
@@ -51,13 +51,13 @@ class TaxApi {
         $shippingSubdivisionCode = '',
         $billingCountryCode = '',
         $billingSubdivisionCode = '',
-        $whereArray = array(),
-        $taxRateArray = array(),
-        $taxTitleArray = array()
+        $whereArray = [],
+        $taxRateArray = [],
+        $taxTitleArray = []
     ) {
-        static::$countryCodeArray = array();
-        static::$subdivisionCodeArray = array();
-        static::$initTaxInfoArray = array();
+        static::$countryCodeArray = [];
+        static::$subdivisionCodeArray = [];
+        static::$initTaxInfoArray = [];
         $countryCode = '';
         $zoneCode = '';
 
@@ -178,7 +178,7 @@ class TaxApi {
             if ($decimalDigits = -1) {
                 $decimalDigits = $staticInfoObj->currencyInfo['cu_decimal_digits'];
             }
-            $priority = array();
+            $priority = [];
             foreach ($taxArray as $key => $row) {
                 $priority[$key] = $row['tx_priority'];
             }
@@ -209,7 +209,7 @@ class TaxApi {
         array $categoryArray,
         $recursionLevel = 0
     ) {
-        $result = array();
+        $result = [];
         $select_fields = 'uid,parentid';
         $from_table = 'static_tax_categories';
         $whereClause = 'uid IN (' . implode(',', $categoryArray) . ')';
@@ -273,7 +273,7 @@ class TaxApi {
         &$zoneCode,
         $staticInfoObj,
         $tax = 0.0,
-        array $categoryArray = array(),
+        array $categoryArray = [],
         $taxId = 1,
         $shopCountryCode = '',
         $shopSubdivisionCode = '',
@@ -293,7 +293,7 @@ class TaxApi {
         ) {
             $errorDetail = '';
             if (is_object($tax)) {
-                $errorDetail = ' "' . get_class($staticInfoObj) . '" is no supported object.'
+                $errorDetail = ' "' . $staticInfoObj::class . '" is no supported object.';
             } else {
                 $errorDetail = ' "' . $staticInfoObj . '" is no object';
             }
@@ -364,7 +364,7 @@ class TaxApi {
             return false;
         }
         $taxArrayIndex = 0;
-        $taxArray = array();
+        $taxArray = [];
 
             // Not taxable!
         if (
@@ -392,7 +392,7 @@ class TaxApi {
             !empty($shippingSubdivisionCode) &&
             $shopSubdivisionCode == $shippingSubdivisionCode
         ) {
-            $countryCodeArray = array();
+            $countryCodeArray = [];
             $countryCodeArray[] = $shopCountryCode;
             if (
                 $shopCountryCode != $shippingCountryCode
@@ -450,13 +450,13 @@ class TaxApi {
                 $whereClause .=
                     $GLOBALS['TSFE']->sys_page->enableFields($mm_table);
 
-                $fieldArray = array(
+                $fieldArray = [
                     $local_table . '.tx_name_en',
                     $local_table . '.tx_priority',
                     $foreign_table . '.uid',
                     $foreign_table . '.title',
                     $foreign_table . '.tx_rate'
-                );
+                ];
 
                 $select = implode(',', $fieldArray);
 
@@ -470,7 +470,7 @@ class TaxApi {
             } // foreach ($countryCodeArray as $countryCode)
         } else {
             $useCustomerCountry = false;
-            $categoryLines = array();
+            $categoryLines = [];
 
             if (
                 empty($tax) &&
@@ -533,14 +533,14 @@ class TaxApi {
 
             $config = $GLOBALS['TCA'][$local_table]['columns'];
 
-            $fieldArray = array(
+            $fieldArray = [
                 $local_table . '.tx_name_en',
                 $local_table . '.tx_priority',
                 $foreign_table . '.uid',
                 $foreign_table . '.title',
                 $foreign_table . '.tx_rate',
                 $foreign_table . '.category'
-            );
+            ];
 
             $select = implode(',', $fieldArray);
 
@@ -571,7 +571,7 @@ class TaxApi {
                 $enableClause .=
                     $GLOBALS['TSFE']->sys_page->enableFields($mm_table);
                 $minimumTaxRate = false;
-                $taxRow = array();
+                $taxRow = [];
 
                 while($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
                     $whereClause = ' AND ' . $mm_table . '.uid_local=' . $row['uid'] . $enableClause . ' AND ' . $mm_table .'.uid_foreign IN (' . implode(',',  $categoryLines) . ')';

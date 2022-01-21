@@ -3,7 +3,7 @@ defined('TYPO3_MODE') || die('Access denied.');
 
 $result = array(
     'ctrl' => array(
-        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes_mm_rates',
+        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates',
         'label' => 'title',
         'delete' => 'deleted',
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
@@ -15,7 +15,7 @@ $result = array(
     ),
     'columns' => array(
         'uid_local' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes_mm_rates.uid_local',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates.uid_local',
             'config' => array(
                 'type' => 'select',
                 'foreign_table' => 'static_taxes',
@@ -23,7 +23,7 @@ $result = array(
             )
         ),
         'uid_foreign' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes_mm_rates.uid_foreign',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates.uid_foreign',
             'config' => array(
                 'type' => 'select',
                 'foreign_table' => 'static_tax_rates',

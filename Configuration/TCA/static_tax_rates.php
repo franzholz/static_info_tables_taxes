@@ -10,7 +10,7 @@ $result = array(
         'adminOnly' => 1,
         'rootLevel' => 1,
         'is_static' => 1,
-        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates',
+        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
         'hideTable' => true,
         'default_sortby' => 'ORDER BY title',
@@ -56,7 +56,7 @@ $result = array(
         ),
         'title' => array (
             'exclude' => 0,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates.title',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.title',
             'config' => array (
                 'type' => 'input',
                 'size' => '40',
@@ -64,7 +64,7 @@ $result = array(
             )
         ),
         'tx_rate' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates.tx_rate',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.tx_rate',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -79,7 +79,7 @@ $result = array(
             )
         ),
         'category' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_rates.category',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.category',
             'exclude' => '0',
             'config' => array(
                 'autoSizeMax' => 45,

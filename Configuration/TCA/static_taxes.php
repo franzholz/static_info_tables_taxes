@@ -3,7 +3,7 @@ defined('TYPO3_MODE') || die('Access denied.');
 
 $result = array(
     'ctrl' => array(
-        'title' => 'LLL:EXT:'.STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes',
+        'title' => 'LLL:EXT:'.STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes',
         'label' => 'tx_name_en',
         'readOnly' => 1,
         'adminOnly' => 1,
@@ -51,7 +51,7 @@ $result = array(
             )
         ),
         'tx_country_iso_2' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.cn_iso_2',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.cn_iso_2',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -62,7 +62,7 @@ $result = array(
             )
         ),
         'tx_country_iso_3' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.cn_iso_3',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.cn_iso_3',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -73,7 +73,7 @@ $result = array(
             )
         ),
         'tx_zn_code' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.zn_code',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.zn_code',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -84,7 +84,7 @@ $result = array(
             )
         ),
         'tx_name_en' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_name_en',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_name_en',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -95,7 +95,7 @@ $result = array(
             )
         ),
         'tx_code' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_code',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_code',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',
@@ -107,22 +107,22 @@ $result = array(
         ),
         'tx_rate_id' => array(
             'exclude' => 0,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id',
             'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.0', '0'),
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.1', '1'),
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.2', '2'),
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.3', '3'),
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.4', '4'),
-                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_id.I.5', '5'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.0', '0'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.1', '1'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.2', '2'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.3', '3'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.4', '4'),
+                    array('LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.5', '5'),
                 ),
             )
         ),
         'tx_rate_uid' => array(
             'exclude' => 1,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_rate_uid',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_uid',
             'config' => array(
                 'type' => 'inline',
                 'appearance' => array('collapseAll' => true, 'newRecordLinkAddTitle' => false, 'useCombination' => true),
@@ -136,7 +136,7 @@ $result = array(
             ),
         ),
         'tx_priority' => array(
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_taxes.tx_priority',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_priority',
             'exclude' => '0',
             'config' => array(
                 'type' => 'input',

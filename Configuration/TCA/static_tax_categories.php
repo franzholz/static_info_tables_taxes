@@ -11,7 +11,7 @@ $result = array(
         'rootLevel' => 1,
         'is_static' => 1,
         'default_sortby' => 'ORDER BY title',
-        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_categories',
+        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_categories',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
         'default_sortby' => 'ORDER BY uid',
         'delete' => 'deleted',
@@ -56,7 +56,7 @@ $result = array(
         ),
         'title' => array (
             'exclude' => 0,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_categories.title',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_categories.title',
             'config' => array (
                 'type' => 'input',
                 'size' => '40',
@@ -65,7 +65,7 @@ $result = array(
         ),
         'parentid' => array (
             'exclude' => 1,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/locallang_db.xml:static_tax_categories.parentid',
+            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_categories.parentid',
             'config' => array(
                 'autoSizeMax' => 20,
                 'minitems' => 0,

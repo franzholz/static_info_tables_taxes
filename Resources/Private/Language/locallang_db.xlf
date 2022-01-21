@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file t3:id="1642768497" source-language="en" datatype="plaintext" original="messages" date="2022-01-21T12:34:57Z" product-name="static_info_tables_taxes">
+	<file source-language="en" datatype="plaintext" original="messages" date="2022-01-21T20:18:55Z" product-name="static_info_tables_taxes">
 		<header/>
 		<body>
 			<trans-unit id="static_taxes" resname="static_taxes" >
