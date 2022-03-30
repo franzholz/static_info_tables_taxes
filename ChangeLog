@@ -1,3 +1,7 @@
+2022-03-30 Franz Holzinger <franz@ttproducts.de>
+    * compatibility also with PHP 7.5
+    * support also OldStaticInfoTablesApi
+
 2022-01-21 Franz Holzinger <franz@ttproducts.de>
     * compatibility with PHP 8 and TYPO3 11.5
 

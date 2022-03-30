@@ -288,12 +288,13 @@ class TaxApi {
             !is_object($staticInfoObj) ||
             (
                 !($staticInfoObj instanceof \JambageCom\Div2007\Api\StaticInfoTablesApi) &&
+                !($staticInfoObj instanceof \JambageCom\Div2007\Api\OldStaticInfoTablesApi) &&
                 !($staticInfoObj instanceof \SJBR\StaticInfoTables\PiBaseApi)
             )
         ) {
             $errorDetail = '';
-            if (is_object($tax)) {
-                $errorDetail = ' "' . $staticInfoObj::class . '" is no supported object.';
+            if (is_object($staticInfoObj)) {
+                $errorDetail = ' "' . get_class($staticInfoObj) . '" is no supported object.';
             } else {
                 $errorDetail = ' "' . $staticInfoObj . '" is no object';
             }
