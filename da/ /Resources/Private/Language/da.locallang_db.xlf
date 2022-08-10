@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="messages" date="2022-01-21T20:18:55Z" product-name="static_info_tables_taxes" target-language="da">
+  <file source-language="en" datatype="plaintext" original="EXT:static_info_tables_taxes/Resources/Private/Language/Modules/locallang_db.xlf" date="2022-01-21T20:18:55Z" product-name="static_info_tables_taxes" target-language="da">
     <header/>
     <body>
       <trans-unit id="static_taxes" resname="static_taxes">
