@@ -5,31 +5,31 @@
     <body>
       <trans-unit id="static_taxes" resname="static_taxes">
         <source>Static taxes</source>
-        <target state="needs-translation">Static taxes</target>
+        <target state="translated">Impuesto - Datos státicos</target>
       </trans-unit>
       <trans-unit id="static_taxes.cn_iso_2" resname="static_taxes.cn_iso_2">
         <source>ISO 3166-1 A2 Country code:</source>
-        <target state="needs-translation">ISO 3166-1 A2 Country code:</target>
+        <target state="translated">Código de país ISO 2:</target>
       </trans-unit>
       <trans-unit id="static_taxes.cn_iso_3" resname="static_taxes.cn_iso_3">
         <source>ISO 3166-1 A3 Country code:</source>
-        <target state="needs-translation">ISO 3166-1 A3 Country code:</target>
+        <target state="translated">Código de país ISO 3:</target>
       </trans-unit>
       <trans-unit id="static_taxes.zn_code" resname="static_taxes.zn_code">
         <source>ISO 3166-2 Country Zone code:</source>
-        <target state="needs-translation">ISO 3166-2 Country Zone code:</target>
+        <target state="translated">Código de subdivisión de país:</target>
       </trans-unit>
       <trans-unit id="static_taxes.tx_name_en" resname="static_taxes.tx_name_en">
         <source>Tax name (EN):</source>
-        <target state="needs-translation">Tax name (EN):</target>
+        <target state="translated">Denominación del impuesto (EN):</target>
       </trans-unit>
       <trans-unit id="static_taxes.tx_code" resname="static_taxes.tx_code">
         <source>Tax code:</source>
-        <target state="needs-translation">Tax code:</target>
+        <target state="translated">Código de impuesto:</target>
       </trans-unit>
       <trans-unit id="static_taxes.tx_rate_id" resname="static_taxes.tx_rate_id">
         <source>Tax rate:</source>
-        <target state="needs-translation">Tax rate:</target>
+        <target state="translated">Tasa del impuesto:</target>
       </trans-unit>
       <trans-unit id="static_taxes.tx_rate_id.I.0" resname="static_taxes.tx_rate_id.I.0">
         <source>Unused</source>
@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="static_taxes.tx_priority" resname="static_taxes.tx_priority">
         <source>Priority:</source>
-        <target state="needs-translation">Priority:</target>
+        <target state="translated">Prioridad:</target>
       </trans-unit>
       <trans-unit id="static_taxes_mm_rates" resname="static_taxes_mm_rates">
         <source>Static taxes to tax rates</source>
