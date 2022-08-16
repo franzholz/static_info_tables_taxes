@@ -5,21 +5,18 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Static taxes.',
+    'title' => 'Static Taxes.',
     'description' => 'Tables and functions used for dealing with taxes',
     'category' => 'misc',
     'author' => 'Franz Holzinger',
     'author_email' => 'franz@ttproducts.de',
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
     'clearCacheOnLoad' => 0,
     'author_company' => '',
-    'version' => '0.6.1',
+    'version' => '0.6.2',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.5.99',
-            'static_info_tables' => '6.7.3-11.5.99',
+            'typo3' => '10.4.0-11.5.99'
         ],
         'conflicts' => [
         ],

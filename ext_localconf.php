@@ -7,10 +7,6 @@ call_user_func(function () {
         define('STATIC_INFO_TABLES_TAXES_EXT', 'static_info_tables_taxes');
     }
 
-    if (!defined ('STATIC_INFO_TABLES_EXT')) {
-        define('STATIC_INFO_TABLES_EXT', 'static_info_tables');
-    }
-
     if (!defined ('PATH_BE_STATICINFOTABLESTAXES')) {
         define('PATH_BE_STATICINFOTABLESTAXES', \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath(STATIC_INFO_TABLES_TAXES_EXT));
     }

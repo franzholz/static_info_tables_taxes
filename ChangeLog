@@ -1,3 +1,7 @@
+2022-08-16 Franz Holzinger <franz@ttproducts.de>
+    * Remove dependency from static_info_tables
+    * add missing autoload to composer
+
 2022-03-30 Franz Holzinger <franz@ttproducts.de>
     * compatibility also with PHP 7.5
     * support also OldStaticInfoTablesApi
