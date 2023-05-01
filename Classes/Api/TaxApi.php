@@ -232,7 +232,7 @@ class TaxApi {
                 if (!empty($row['parentid']) && $recursionLevel < 10) {
                     $parentArray =
                         static::getCategoryRootline(
-                            array($row['parentid']),
+                            [$row['parentid']],
                             $recursionLevel + 1
                         );
                     $result = array_merge($result, $parentArray);

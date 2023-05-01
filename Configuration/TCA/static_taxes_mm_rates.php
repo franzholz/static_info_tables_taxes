@@ -1,52 +1,52 @@
 <?php
 defined('TYPO3') || die('Access denied.');
 
-$result = array(
-    'ctrl' => array(
+$result = [
+    'ctrl' => [
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates',
         'label' => 'title',
         'delete' => 'deleted',
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
         'hideTable' => true,
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => ''
-    ),
-    'columns' => array(
-        'uid_local' => array(
+    ],
+    'columns' => [
+        'uid_local' => [
             'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates.uid_local',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'foreign_table' => 'static_taxes',
                 'maxitems' => 1
-            )
-        ),
-        'uid_foreign' => array(
+            ]
+        ],
+        'uid_foreign' => [
             'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes_mm_rates.uid_foreign',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'foreign_table' => 'static_tax_rates',
                 'maxitems' => 5
-            )
-        ),
-        'sorting' => array(
-            'config' => array(
+            ]
+        ],
+        'sorting' => [
+            'config' => [
                 'type' => 'passthrough',
-            )
-        ),
-        'foreignsort' => array(
-            'config' => array(
+            ]
+        ],
+        'foreignsort' => [
+            'config' => [
                 'type' => 'passthrough',
-            )
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ]
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => ''
-        )
-    ),
-);
+        ]
+    ],
+];
 
 
 return $result;

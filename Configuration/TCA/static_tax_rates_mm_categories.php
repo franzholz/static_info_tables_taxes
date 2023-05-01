@@ -1,57 +1,56 @@
 <?php
 defined('TYPO3') || die('Access denied.');
 
-$result = array(
-    'ctrl' => array(
+$result = [
+    'ctrl' => [
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates_mm_categories',
         'label' => 'title',
         'delete' => 'deleted',
-        'enablecolumns' => array (
+        'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
             'endtime' => 'endtime',
-        ),
+        ],
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
         'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
         'hideTable' => true,
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => ''
-    ),
-    'columns' => array(
-        'uid_local' => array(
+    ],
+    'columns' => [
+        'uid_local' => [
             'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates_mm_categories.uid_local',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'foreign_table' => 'static_tax_rates',
                 'maxitems' => 1
-            )
-        ),
-        'uid_foreign' => array(
+            ]
+        ],
+        'uid_foreign' => [
             'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates_mm_categories.uid_foreign',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'foreign_table' => 'static_tax_categories',
                 'maxitems' => 5
-            )
-        ),
-        'sorting' => array(
-            'config' => array(
+            ]
+        ],
+        'sorting' => [
+            'config' => [
                 'type' => 'passthrough',
-            )
-        ),
-        'foreignsort' => array(
-            'config' => array(
+            ]
+        ],
+        'foreignsort' => [
+            'config' => [
                 'type' => 'passthrough',
-            )
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ]
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => ''
-        )
-    ),
-);
-
+        ]
+    ],
+];
 
 return $result;

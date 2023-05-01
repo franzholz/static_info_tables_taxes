@@ -24,14 +24,14 @@ call_user_func(function () {
     }
 
     $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][STATIC_INFO_TABLES_TAXES_EXT]['tables']['static_taxes'] =
-        array (
-            'label_fields' => array(
+        [
+            'label_fields' => [
                 'tx_name_##', 'tx_name_en'
-            ),
-            'isocode_field' => array(
+            ],
+            'isocode_field' => [
                 'tx_code', 'tx_country_iso_##', 'tx_zn_code'
-            )
-        );
+            ]
+        ];
 });
 
 
