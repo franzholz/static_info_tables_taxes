@@ -12,7 +12,7 @@ $result = [
         'is_static' => 1,
         'default_sortby' => 'ORDER BY title',
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_categories',
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
         'default_sortby' => 'ORDER BY uid',
         'delete' => 'deleted',
         'enablecolumns' => [
@@ -20,7 +20,7 @@ $result = [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
     ],
     'interface' => [
         'showRecordFieldList' => 'title,parentid,starttime,endtime'

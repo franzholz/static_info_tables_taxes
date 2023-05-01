@@ -11,8 +11,8 @@ call_user_func(function () {
         define('PATH_BE_STATICINFOTABLESTAXES', \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath(STATIC_INFO_TABLES_TAXES_EXT));
     }
 
-    if (!defined ('PATH_BE_STATICINFOTABLESTAXES_REL')) {
-        define('PATH_BE_STATICINFOTABLESTAXES_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_STATICINFOTABLESTAXES));
+    if (!defined ('PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL')) {
+        define('PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL', 'EXT:' . STATIC_INFO_TABLES_TAXES_EXT . '/Resources/Public/Icons/');
     }
 
     // constants for the TCA fields

@@ -12,7 +12,7 @@ $result = [
             'endtime' => 'endtime',
         ],
         'prependAtCopy' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'prependAtCopy',
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
         'hideTable' => true,
     ],
     'interface' => [

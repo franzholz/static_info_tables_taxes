@@ -16,7 +16,7 @@ $result = [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
     ],
     'interface' => [
         'showRecordFieldList' => 'tx_name_en,tx_code,tx_country_iso_2,tx_country_iso_3,tx_zn_code,tx_rate_uid,tx_priority,starttime,endtime'

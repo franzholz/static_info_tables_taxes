@@ -11,7 +11,7 @@ $result = [
         'rootLevel' => 1,
         'is_static' => 1,
         'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates',
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
         'hideTable' => true,
         'default_sortby' => 'ORDER BY title',
         'delete' => 'deleted',
@@ -20,7 +20,7 @@ $result = [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => PATH_BE_STATICINFOTABLESTAXES_REL . 'ext_icon.gif',
+        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
     ],
     'interface' => [
         'showRecordFieldList' => 'title,tx_rate,category,starttime,endtime'
