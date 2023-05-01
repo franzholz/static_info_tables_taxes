@@ -48,5 +48,4 @@ $result = [
     ],
 ];
 
-
 return $result;

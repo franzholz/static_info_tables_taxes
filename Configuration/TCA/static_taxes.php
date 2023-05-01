@@ -157,24 +157,19 @@ $result = [
     ],
     'palettes' => [
         '1' => [
-            'showitem' => 'tx_country_iso_2,tx_country_iso_3',
-            'canNotCollapse' => '1'
+            'showitem' => 'tx_country_iso_2,tx_country_iso_3'
         ],
         '2' => [
-            'showitem' => 'hidden,starttime,endtime',
-            'canNotCollapse' => '1'
+            'showitem' => 'hidden,starttime,endtime'
         ],
         '3' => [
-            'showitem' => 'tx_code',
-            'canNotCollapse' => '1'
+            'showitem' => 'tx_code'
         ],
         '4' => [
-            'showitem' => 'tx_rate_id,tx_priority',
-            'canNotCollapse' => '1'
+            'showitem' => 'tx_rate_id,tx_priority'
         ],
         '5' => [
-            'showitem' => 'tx_rate_uid',
-            'canNotCollapse' => '1'
+            'showitem' => 'tx_rate_uid'
         ],
     ]
 ];

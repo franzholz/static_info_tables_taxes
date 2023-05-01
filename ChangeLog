@@ -1,4 +1,7 @@
+
+
 2023-05-01 Franz Holzinger <franz@ttproducts.de>
+    * deprecation no. 67753: Drop "Show secondary options"
     * compatibility with TYPO3 12
 
 2022-08-16 Franz Holzinger <franz@ttproducts.de>
