@@ -105,7 +105,7 @@ $result = [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'title;;7;;3-3-3,tx_rate;;;;3-3-3,category;;;;3-3-3, starttime, endtime'
+            'showitem' => 'title, tx_rate, category, starttime, endtime'
         ],
     ],
 ];

@@ -149,10 +149,10 @@ $result = [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'tx_name_en;;1;;2-2-2,--palette--;;3;;3-3-3,--palette--;;4;;3-3-3,--palette--;;5;;3-3-3'
+            'showitem' => 'tx_name_en, --palette--;;1, --palette--;;3, --palette--;;4, --palette--;;5'
         ],
         '2' => [
-            'showitem' => 'tx_name_en;;1;;2-2-2,--palette--;;3;;3-3-3,--palette--;;2;;3-3-3'
+            'showitem' => 'tx_name_en, --palette--;;1, --palette--;;3, --palette--;;2'
         ],
     ],
     'palettes' => [

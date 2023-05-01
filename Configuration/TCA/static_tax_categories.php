@@ -89,7 +89,7 @@ $result = [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'title;;;;2-2-2,parentid;;;;3-3-3, starttime, endtime'
+            'showitem' => 'title, parentid, starttime, endtime'
         ],
     ],
 ];
