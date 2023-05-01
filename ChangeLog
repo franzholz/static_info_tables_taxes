@@ -1,3 +1,6 @@
+2023-05-01 Franz Holzinger <franz@ttproducts.de>
+    * compatibility with TYPO3 12
+
 2022-08-16 Franz Holzinger <franz@ttproducts.de>
     * Remove dependency from static_info_tables
     * add missing autoload to composer

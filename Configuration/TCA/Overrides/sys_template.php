@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die('Access denied.');
+defined('TYPO3') || die('Access denied.');
 
 if (!defined ('STATIC_INFO_TABLES_TAXES_EXT')) {
     define('STATIC_INFO_TABLES_TAXES_EXT', 'static_info_tables_taxes');
