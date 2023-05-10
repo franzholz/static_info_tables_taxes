@@ -1,9 +1,14 @@
 <?php
 defined('TYPO3') || die('Access denied.');
 
+$extensionKey = 'static_info_tables_taxes';
+$languageFile = 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.';
+$languageSubpath = '/Resources/Private/Language/';
+$imagePath = 'EXT:' . $extensionKey . '/Resources/Public/Icons/';
+
 $result = [
     'ctrl' => [
-        'title' => 'LLL:EXT:'.STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes',
+        'title' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes',
         'label' => 'tx_name_en',
         'readOnly' => 1,
         'adminOnly' => 1,
@@ -16,7 +21,7 @@ $result = [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
+        'iconfile' => $imagePath . 'Extension.gif',
     ],
     'interface' => [
         'showRecordFieldList' => 'tx_name_en,tx_code,tx_country_iso_2,tx_country_iso_3,tx_zn_code,tx_rate_uid,tx_priority,starttime,endtime'
@@ -24,7 +29,7 @@ $result = [
     'columns' => [
         'starttime' => [
             'exclude' => 0,
-            'label' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'starttime',
+            'label' => $languageFile . 'starttime',
             'config' => [
                 'type' => 'input',
                 'size' => '8',
@@ -36,7 +41,7 @@ $result = [
         ],
         'endtime' => [
             'exclude' => 0,
-            'label' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'endtime',
+            'label' => $languageFile . 'endtime',
             'config' => [
                 'type' => 'input',
                 'size' => '8',
@@ -51,7 +56,7 @@ $result = [
             ]
         ],
         'tx_country_iso_2' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.cn_iso_2',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.cn_iso_2',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -62,7 +67,7 @@ $result = [
             ]
         ],
         'tx_country_iso_3' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.cn_iso_3',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.cn_iso_3',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -73,7 +78,7 @@ $result = [
             ]
         ],
         'tx_zn_code' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.zn_code',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.zn_code',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -84,7 +89,7 @@ $result = [
             ]
         ],
         'tx_name_en' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_name_en',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_name_en',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -95,7 +100,7 @@ $result = [
             ]
         ],
         'tx_code' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_code',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_code',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -107,22 +112,22 @@ $result = [
         ],
         'tx_rate_id' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id',
             'config' => [
                 'type' => 'select',
                 'items' => [
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.0', '0'],
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.1', '1'],
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.2', '2'],
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.3', '3'],
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.4', '4'],
-                    ['LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_id.I.5', '5'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.0', '0'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.1', '1'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.2', '2'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.3', '3'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.4', '4'],
+                    ['LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_id.I.5', '5'],
                 ],
             ]
         ],
         'tx_rate_uid' => [
             'exclude' => 1,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_rate_uid',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_rate_uid',
             'config' => [
                 'type' => 'inline',
                 'appearance' => ['collapseAll' => true, 'newRecordLinkAddTitle' => false, 'useCombination' => true],
@@ -136,7 +141,7 @@ $result = [
             ],
         ],
         'tx_priority' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_taxes.tx_priority',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_taxes.tx_priority',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',

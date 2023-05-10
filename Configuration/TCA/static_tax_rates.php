@@ -2,6 +2,10 @@
 defined('TYPO3') || die('Access denied.');
 
 $where = \TYPO3\CMS\Backend\Utility\BackendUtility::BEenableFields('static_tax_categories');
+$extensionKey = 'static_info_tables_taxes';
+$languageFile = 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.';
+$languageSubpath = '/Resources/Private/Language/';
+$imagePath = 'EXT:' . $extensionKey . '/Resources/Public/Icons/';
 
 $result = [
     'ctrl' => [
@@ -10,8 +14,8 @@ $result = [
         'adminOnly' => 1,
         'rootLevel' => 1,
         'is_static' => 1,
-        'title' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates',
-        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
+        'title' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_tax_rates',
+        'iconfile' => $imagePath . 'Extension.gif',
         'hideTable' => true,
         'default_sortby' => 'ORDER BY title',
         'delete' => 'deleted',
@@ -20,7 +24,7 @@ $result = [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => PATH_STATICINFOTABLESTAXES_ICON_TABLE_REL . 'Extension.gif',
+        'iconfile' => $imagePath . 'Extension.gif',
     ],
     'interface' => [
         'showRecordFieldList' => 'title,tx_rate,category,starttime,endtime'
@@ -28,7 +32,7 @@ $result = [
     'columns' => [
         'starttime' => [
             'exclude' => 1,
-            'label' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'starttime',
+            'label' => $languageFile . 'starttime',
             'config' => [
                 'type' => 'input',
                 'size' => '8',
@@ -40,7 +44,7 @@ $result = [
         ],
         'endtime' => [
             'exclude' => 1,
-            'label' => STATICINFOTABLESTAXES_LANGUAGE_LGL . 'endtime',
+            'label' => $languageFile . 'endtime',
             'config' => [
                 'type' => 'input',
                 'size' => '8',
@@ -56,7 +60,7 @@ $result = [
         ],
         'title' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.title',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_tax_rates.title',
             'config' => [
                 'type' => 'input',
                 'size' => '40',
@@ -64,7 +68,7 @@ $result = [
             ]
         ],
         'tx_rate' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.tx_rate',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_tax_rates.tx_rate',
             'exclude' => '0',
             'config' => [
                 'type' => 'input',
@@ -79,7 +83,7 @@ $result = [
             ]
         ],
         'category' => [
-            'label' => 'LLL:EXT:' . STATIC_INFO_TABLES_TAXES_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang_db.xlf:static_tax_rates.category',
+            'label' => 'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:static_tax_rates.category',
             'exclude' => '0',
             'config' => [
                 'autoSizeMax' => 45,
