@@ -2,7 +2,7 @@
 defined('TYPO3') || die('Access denied.');
 
 $extensionKey = 'static_info_tables_taxes';
-$languageFile = 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.';
+$languageFile = 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.';
 $languageSubpath = '/Resources/Private/Language/';
 $imagePath = 'EXT:' . $extensionKey . '/Resources/Public/Icons/';
 

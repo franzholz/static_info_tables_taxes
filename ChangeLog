@@ -1,4 +1,6 @@
-
+2024-05-08 Franz Holzinger  <franz@tt_products.de>
+    * remove addition to $where:
+        \TYPO3\CMS\Backend\Utility\BackendUtility::BEenableFields($foreigntable)
 
 2023-05-01 Franz Holzinger <franz@ttproducts.de>
     * deprecation no. 67753: Drop "Show secondary options"
@@ -20,7 +22,7 @@
 
 2021-02-13 Franz Holzinger <franz@ttproducts.de>
  * support for TYPO3 10.4 and PHP 7.4
- * support the parameter object \JambageCom\Div2007\Api\StaticInfoTablesApi as well as \SJBR\StaticInfoTables\PiBaseApi 
+ * support the parameter object \JambageCom\Div2007\Api\StaticInfoTablesApi as well as \SJBR\StaticInfoTables\PiBaseApi
 
 2020-12-28 Franz Holzinger <franz@ttproducts.de>
  * apaptions for Germany Corona reduced taxes: Undo the tax reductions. The new values are 19 and 7 percent again.
@@ -37,7 +39,7 @@
 
 2019-12-21 Franz Holzinger <franz@ttproducts.de>
  * compatibility for TYPO3 9: static_info_tables_taxes 0.4.0 now runs fully under TYPO3 9.5.
- * Add new reduced tax rates for ebooks in Germany 7% since 18th December 2019 and Austria 10% since 1st January 2020.    
+ * Add new reduced tax rates for ebooks in Germany 7% since 18th December 2019 and Austria 10% since 1st January 2020.
 
 2018-08-23 Franz Holzinger  <franz@ttproducts.de>
 * bugfix for TYPO3 8.7: use the method \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix instead of \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath
