@@ -3,89 +3,89 @@
   <file source-language="en" datatype="plaintext" original="EXT:static_info_tables_taxes/Resources/Private/Language/Modules/locallang_db.xlf" date="2022-01-21T20:18:55Z" product-name="static_info_tables_taxes" target-language="da">
     <header/>
     <body>
-      <trans-unit id="static_taxes" resname="static_taxes">
+      <trans-unit id="static_taxes" resname="static_taxes" approved="yes">
         <source>Static taxes</source>
-        <target state="needs-translation">Static taxes</target>
+        <target state="final">Statiske skatter</target>
       </trans-unit>
-      <trans-unit id="static_taxes.cn_iso_2" resname="static_taxes.cn_iso_2">
+      <trans-unit id="static_taxes.cn_iso_2" resname="static_taxes.cn_iso_2" approved="yes">
         <source>ISO 3166-1 A2 Country code:</source>
-        <target state="needs-translation">ISO 3166-1 A2 Country code:</target>
+        <target state="final">ISO 3166-1 A2 Landekode:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.cn_iso_3" resname="static_taxes.cn_iso_3">
+      <trans-unit id="static_taxes.cn_iso_3" resname="static_taxes.cn_iso_3" approved="yes">
         <source>ISO 3166-1 A3 Country code:</source>
-        <target state="needs-translation">ISO 3166-1 A3 Country code:</target>
+        <target state="final">ISO 3166-1 A3 Landekode:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.zn_code" resname="static_taxes.zn_code">
+      <trans-unit id="static_taxes.zn_code" resname="static_taxes.zn_code" approved="yes">
         <source>ISO 3166-2 Country Zone code:</source>
-        <target state="needs-translation">ISO 3166-2 Country Zone code:</target>
+        <target state="final">ISO 3166-2 landezonekode:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_name_en" resname="static_taxes.tx_name_en">
+      <trans-unit id="static_taxes.tx_name_en" resname="static_taxes.tx_name_en" approved="yes">
         <source>Tax name (EN):</source>
-        <target state="needs-translation">Tax name (EN):</target>
+        <target state="final">Skattenavn (EN):</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_code" resname="static_taxes.tx_code">
+      <trans-unit id="static_taxes.tx_code" resname="static_taxes.tx_code" approved="yes">
         <source>Tax code:</source>
-        <target state="needs-translation">Tax code:</target>
+        <target state="final">Skatte-kode:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id" resname="static_taxes.tx_rate_id">
+      <trans-unit id="static_taxes.tx_rate_id" resname="static_taxes.tx_rate_id" approved="yes">
         <source>Tax rate:</source>
-        <target state="needs-translation">Tax rate:</target>
+        <target state="final">Skattesats:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.0" resname="static_taxes.tx_rate_id.I.0">
+      <trans-unit id="static_taxes.tx_rate_id.I.0" resname="static_taxes.tx_rate_id.I.0" approved="yes">
         <source>Unused</source>
-        <target state="needs-translation">Unused</target>
+        <target state="final">Ubrugt</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.1" resname="static_taxes.tx_rate_id.I.1">
+      <trans-unit id="static_taxes.tx_rate_id.I.1" resname="static_taxes.tx_rate_id.I.1" approved="yes">
         <source>Standard</source>
-        <target state="needs-translation">Standard</target>
+        <target state="final">Standard</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.2" resname="static_taxes.tx_rate_id.I.2">
+      <trans-unit id="static_taxes.tx_rate_id.I.2" resname="static_taxes.tx_rate_id.I.2" approved="yes">
         <source>Upper Reducted</source>
-        <target state="needs-translation">Upper Reducted</target>
+        <target state="final">Øvre reduceret</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.3" resname="static_taxes.tx_rate_id.I.3">
+      <trans-unit id="static_taxes.tx_rate_id.I.3" resname="static_taxes.tx_rate_id.I.3" approved="yes">
         <source>Intermediate Reducted</source>
-        <target state="needs-translation">Intermediate Reducted</target>
+        <target state="final">Mellemliggende reduceret</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.4" resname="static_taxes.tx_rate_id.I.4">
+      <trans-unit id="static_taxes.tx_rate_id.I.4" resname="static_taxes.tx_rate_id.I.4" approved="yes">
         <source>Lower Reducted</source>
-        <target state="needs-translation">Lower Reducted</target>
+        <target state="final">Nedre reduceret</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_id.I.5" resname="static_taxes.tx_rate_id.I.5">
+      <trans-unit id="static_taxes.tx_rate_id.I.5" resname="static_taxes.tx_rate_id.I.5" approved="yes">
         <source>Lowest Reducted</source>
-        <target state="needs-translation">Lowest Reducted</target>
+        <target state="final">Laveste reduceret</target>
       </trans-unit>
-      <trans-unit id="static_tax_categories" resname="static_tax_categories">
+      <trans-unit id="static_tax_categories" resname="static_tax_categories" approved="yes">
         <source>Tax Categories</source>
-        <target state="needs-translation">Tax Categories</target>
+        <target state="final">Skattekategorier</target>
       </trans-unit>
-      <trans-unit id="static_tax_rates.category" resname="static_tax_rates.category">
+      <trans-unit id="static_tax_rates.category" resname="static_tax_rates.category" approved="yes">
         <source>Category:</source>
-        <target state="needs-translation">Category:</target>
+        <target state="final">Kategori:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_rate_uid" resname="static_taxes.tx_rate_uid">
+      <trans-unit id="static_taxes.tx_rate_uid" resname="static_taxes.tx_rate_uid" approved="yes">
         <source>Tax table:</source>
-        <target state="needs-translation">Tax table:</target>
+        <target state="final">Skattetabel:</target>
       </trans-unit>
-      <trans-unit id="static_taxes.tx_priority" resname="static_taxes.tx_priority">
+      <trans-unit id="static_taxes.tx_priority" resname="static_taxes.tx_priority" approved="yes">
         <source>Priority:</source>
-        <target state="needs-translation">Priority:</target>
+        <target state="final">Prioritet:</target>
       </trans-unit>
-      <trans-unit id="static_taxes_mm_rates" resname="static_taxes_mm_rates">
+      <trans-unit id="static_taxes_mm_rates" resname="static_taxes_mm_rates" approved="yes">
         <source>Static taxes to tax rates</source>
-        <target state="needs-translation">Static taxes to tax rates</target>
+        <target state="final">Statiske skatter til skattesatser</target>
       </trans-unit>
-      <trans-unit id="static_tax_rates_mm_classes" resname="static_tax_rates_mm_classes">
+      <trans-unit id="static_tax_rates_mm_classes" resname="static_tax_rates_mm_classes" approved="yes">
         <source>Static tax rates to classes</source>
-        <target state="needs-translation">Static tax rates to classes</target>
+        <target state="final">Statiske skattesatser til klasser</target>
       </trans-unit>
-      <trans-unit id="static_tax_rates" resname="static_tax_rates">
+      <trans-unit id="static_tax_rates" resname="static_tax_rates" approved="yes">
         <source>Static tax rates</source>
-        <target state="needs-translation">Static tax rates</target>
+        <target state="final">Statiske skattesatser</target>
       </trans-unit>
-      <trans-unit id="static_tax_rates.tx_rate" resname="static_tax_rates.tx_rate">
+      <trans-unit id="static_tax_rates.tx_rate" resname="static_tax_rates.tx_rate" approved="yes">
         <source>Rate:</source>
-        <target state="needs-translation">Rate:</target>
+        <target state="final">Sats:</target>
       </trans-unit>
     </body>
   </file>
