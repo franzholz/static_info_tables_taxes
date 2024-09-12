@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:static_info_tables_taxes/Resources/Private/Language/Modules/locallang_db.xlf" date="2022-01-21T20:18:55Z" product-name="static_info_tables_taxes" target-language="da">
+    <header/>
+    <body>
+      <trans-unit id="static_taxes" resname="static_taxes" approved="yes">
+        <source>Static taxes</source>
+        <target state="final">Statiske skatter</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.cn_iso_2" resname="static_taxes.cn_iso_2" approved="yes">
+        <source>ISO 3166-1 A2 Country code:</source>
+        <target state="final">ISO 3166-1 A2 Landekode:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.cn_iso_3" resname="static_taxes.cn_iso_3" approved="yes">
+        <source>ISO 3166-1 A3 Country code:</source>
+        <target state="final">ISO 3166-1 A3 Landekode:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.zn_code" resname="static_taxes.zn_code" approved="yes">
+        <source>ISO 3166-2 Country Zone code:</source>
+        <target state="final">ISO 3166-2 landezonekode:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_name_en" resname="static_taxes.tx_name_en" approved="yes">
+        <source>Tax name (EN):</source>
+        <target state="final">Skattenavn (EN):</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_code" resname="static_taxes.tx_code" approved="yes">
+        <source>Tax code:</source>
+        <target state="final">Skatte-kode:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id" resname="static_taxes.tx_rate_id" approved="yes">
+        <source>Tax rate:</source>
+        <target state="final">Skattesats:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.0" resname="static_taxes.tx_rate_id.I.0" approved="yes">
+        <source>Unused</source>
+        <target state="final">Ubrugt</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.1" resname="static_taxes.tx_rate_id.I.1" approved="yes">
+        <source>Standard</source>
+        <target state="final">Standard</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.2" resname="static_taxes.tx_rate_id.I.2" approved="yes">
+        <source>Upper Reducted</source>
+        <target state="final">Øvre reduceret</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.3" resname="static_taxes.tx_rate_id.I.3" approved="yes">
+        <source>Intermediate Reducted</source>
+        <target state="final">Mellemliggende reduceret</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.4" resname="static_taxes.tx_rate_id.I.4" approved="yes">
+        <source>Lower Reducted</source>
+        <target state="final">Nedre reduceret</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_id.I.5" resname="static_taxes.tx_rate_id.I.5" approved="yes">
+        <source>Lowest Reducted</source>
+        <target state="final">Laveste reduceret</target>
+      </trans-unit>
+      <trans-unit id="static_tax_categories" resname="static_tax_categories" approved="yes">
+        <source>Tax Categories</source>
+        <target state="final">Skattekategorier</target>
+      </trans-unit>
+      <trans-unit id="static_tax_rates.category" resname="static_tax_rates.category" approved="yes">
+        <source>Category:</source>
+        <target state="final">Kategori:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_rate_uid" resname="static_taxes.tx_rate_uid" approved="yes">
+        <source>Tax table:</source>
+        <target state="final">Skattetabel:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes.tx_priority" resname="static_taxes.tx_priority" approved="yes">
+        <source>Priority:</source>
+        <target state="final">Prioritet:</target>
+      </trans-unit>
+      <trans-unit id="static_taxes_mm_rates" resname="static_taxes_mm_rates" approved="yes">
+        <source>Static taxes to tax rates</source>
+        <target state="final">Statiske skatter til skattesatser</target>
+      </trans-unit>
+      <trans-unit id="static_tax_rates_mm_classes" resname="static_tax_rates_mm_classes" approved="yes">
+        <source>Static tax rates to classes</source>
+        <target state="final">Statiske skattesatser til klasser</target>
+      </trans-unit>
+      <trans-unit id="static_tax_rates" resname="static_tax_rates" approved="yes">
+        <source>Static tax rates</source>
+        <target state="final">Statiske skattesatser</target>
+      </trans-unit>
+      <trans-unit id="static_tax_rates.tx_rate" resname="static_tax_rates.tx_rate" approved="yes">
+        <source>Rate:</source>
+        <target state="final">Sats:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
