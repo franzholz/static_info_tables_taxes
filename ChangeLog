@@ -1,3 +1,6 @@
+2024-10-29 Franz Holzinger <franz@ttproducts.de>
+    * compatibility with TYPO3 13
+
 2024-05-08 Franz Holzinger  <franz@tt_products.de>
     * remove addition to $where:
         \TYPO3\CMS\Backend\Utility\BackendUtility::BEenableFields($foreigntable)
